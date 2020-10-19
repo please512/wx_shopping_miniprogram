@@ -1,0 +1,18 @@
+<view class="page">
+  <view class="left">
+    <view class="{{index==selectIndex?'menu':'nomenu'}}" wx:for="{{collectionList}}" wx:key="index" bindtap="selectItem" data-index="{{index}}" data-item="{{item}}">
+      <view class="select" wx:if="{{index==selectIndex}}"></view>
+      <text class="{{index==selectIndex?'menuname':'nomenuname'}}">{{item}}</text>
+    </view>
+  </view>
+  <view class="right">
+    <view class="box" wx:for="{{productList}}" wx:key="index" bindtap="seeProduct" data-item="{{item}}">
+      <view class="imgbox">
+        <image src="{{item.tempFileURL1}}" class="img"></image>
+      </view>
+      <view class="name">{{item.productName}}</view>
+    </view>
+  </view>
+</view>
+<!-- <imgShow imgUrl="{{imgUrl}}" imgShow="{{imgShow}}" bindclose="close"/> -->
+<car/>

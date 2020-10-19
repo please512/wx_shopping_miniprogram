@@ -1,0 +1,48 @@
+<view wx:if="{{!(data && data.length)}}">
+  <image src="../../images/car.png" class="imgempty"></image>
+  <view class="empty">购物车里空空如也....</view>
+  <view class="tip" bindtap="guang">去逛逛</view>
+</view>
+<view wx:else class="box">
+  <view class="con">
+    <view class="title">
+      <!-- <view class="left">
+        <radio-group bindtap="radioChange">
+          <radio checked="{{allchecked}}"/>
+        </radio-group>
+      </view> -->
+      <view class="right">购物清单</view>
+      <view class="del" bindtap="del">删除</view>
+    </view>
+    <view class="title nobot" wx:for="{{data}}" wx:key="index">
+      <view class="left lefbox">
+        <radio-group bindtap="radioChange" data-item="{{item}}">
+          <radio checked="{{item.checked}}"/>
+        </radio-group>
+      </view>
+      <view class="right rightbox">
+        <image src="{{item.detail.tempFileURL1}}" class="img"></image>
+        <view class="lastbox">
+          <view class="name">{{item.detail.productName}}</view>
+          <view class="price">￥{{item.detail.l_price}} <text class="delT" wx:if="{{item.detail.l_region_price}}"> ￥{{item.detail.l_region_price}}</text></view>
+          <view class="jiajian">
+            <view class="jian" bindtap="jian" data-item="{{item}}">-</view>
+            <view class="num">{{item.num}}</view>
+            <view class="jia" bindtap="jia" data-item="{{item}}">+</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="bot">
+    <view class="carbox">
+      <radio-group bindtap="allChange" class='all'>
+        <radio checked="{{allchecked}}"/>全选
+      </radio-group>
+    </view>
+    <view class="btns">
+      <view class="join">合计：<text class="num">￥{{allMoney}}</text></view>
+      <view class="buy" bindtap="pay">去结算</view>
+    </view>
+  </view>
+</view>

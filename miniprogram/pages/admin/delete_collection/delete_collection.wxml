@@ -1,0 +1,8 @@
+<view class="title">货架列表</view>
+<view class="{{index==collectionList.length-1?'contentlast':'content'}}" wx:for="{{collectionList}}" wx:key="index">
+  <icon class="iconfont iconshinshophuojia icon"></icon>
+  <text class="tip">{{item}}</text>
+  <view class="del" catchtap="delete_collection" data-item="{{item}}">
+    <icon class="iconfont iconshanchu icon"></icon>
+  </view>
+</view>

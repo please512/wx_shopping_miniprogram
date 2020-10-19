@@ -1,0 +1,20 @@
+<view class="page">
+  <view class="content">
+    <view class="tip">商品分区</view>
+    <view class="inpbox">
+      <picker class="inp" bindchange="getProductArea" value="{{collectionIndex}}" range="{{collectionList}}">{{collectionList[collectionIndex]}}</picker>
+    </view>
+  </view>
+  <view class="con">
+    <view class="box" wx:if="{{productList.length && !loading}}" wx:for="{{productList}}" wx:key="index" bindtap="dele" data-item="{{item}}">
+      <view class="imgbox">
+        <image class="img" src="{{item.tempFileURL1}}"></image>
+      </view>
+      <view class="pri name">{{item.productName}}</view>
+      <view class="pri">￥ {{item.l_price}}</view>
+    </view>
+    <view class="empty" wx:if="{{!productList.length && !loading}}">
+      <image src="../../../images/noproduct.png" class="emptyimg"></image>
+    </view>
+  </view>
+</view>

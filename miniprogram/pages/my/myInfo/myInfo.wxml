@@ -1,0 +1,28 @@
+<view class='page'>
+  <view style="padding-left:30rpx;height:100rpx;line-height:100rpx;font-weight:600;">请填写个人信息</view>
+  <view class="content">
+    <view class="tip">微信昵称</view>
+    <view class="inpbox">
+      <input value="{{nickName}}" bindinput="telinp" type="number" disabled class="inp disabled"></input>
+    </view>
+  </view>
+  <view class="content">
+    <view class="tip">联系电话</view>
+    <view class="inpbox">
+      <input value="{{tel}}" placeholder="请输入您的联系电话" bindinput="telinp" type="number" class="inp"></input>
+    </view>
+  </view>
+  <view class="content">
+    <view class="tip">联系地址</view>
+    <view class="inpbox">
+      <input value="{{address}}" placeholder="请输入您的联系地址" bindinput="addressinp" class="inp"></input>
+    </view>
+  </view>
+  <!-- <view class="content">
+    <view class="tip">个人秘钥</view>
+    <view class="inpbox">
+      <input placeholder="系统将自动生成您的秘钥" type="number" disabled class="inp disabled"></input>
+    </view>
+  </view> -->
+  <button class="submit" bindtap="submit">提 交</button>
+</view>

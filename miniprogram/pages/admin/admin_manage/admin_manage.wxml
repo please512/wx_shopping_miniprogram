@@ -1,0 +1,11 @@
+<view class="title">角色列表</view>
+<view class="{{index==userList.length-1?'contentlast':'content'}}" wx:for="{{userList}}" wx:key="index">
+  <icon class="iconfont icongerenzhongxin icon"></icon>
+  <text class="tip">{{item.nickName}} <text class="red">{{item.isAdmin==='1'?'（管理员）':''}}</text></text>
+  <view wx:if="{{item.isAdmin==='1'}}" class="del" catchtap="delete_admin" data-item="{{item}}">
+    <icon class="iconfont iconshanchu icon"></icon>
+  </view>
+  <view wx:if="{{item.isAdmin==='0'}}" class="del" catchtap="add_admin" data-item="{{item}}">
+    <icon class="iconfont iconshezhi icon"></icon>
+  </view>
+</view>

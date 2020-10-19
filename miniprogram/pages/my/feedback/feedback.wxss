@@ -1,0 +1,36 @@
+/* miniprogram/pages/my/myInfo/myInfo.wxss */
+.page{
+  width: 100vw;
+  height: 100vh;
+}
+.content{
+  padding:0 30rpx;
+  margin-bottom: 30rpx;
+}
+.tip{
+  font-weight: 600;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 0 30rpx;
+  color:#1296db;
+}
+.inp{
+  margin: 0;
+  padding: 0;
+  border: 1px #ccc solid;
+  padding: 20rpx 30rpx;
+  font-size: 30rpx;
+  border-radius: 10rpx;
+}
+.disabled{
+  background: #ccc;
+  border: 1px #ccc solid;
+}
+.submit{
+  background: #1296db;
+  color: #fff;
+  margin-top:120rpx;
+}
+textarea{
+  width:auto;
+}

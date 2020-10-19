@@ -1,0 +1,12 @@
+<view class="layerOver" wx:if="{{imgShow}}" bindtap="layClick"></view>
+<view class="imgbox" wx:if="{{imgShow}}">
+  <view class="head">
+    图片详情
+    <view class="close" catchtap="close">
+      <icon class="iconfont iconguanbi icon"></icon>
+    </view>
+  </view>
+  <view class="imgcontent">
+    <image src="{{imgUrl}}" class="img"></image>
+  </view>
+</view>

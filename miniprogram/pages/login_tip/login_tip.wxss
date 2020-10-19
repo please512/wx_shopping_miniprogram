@@ -1,0 +1,32 @@
+/* miniprogram/pages/login_tip/login_tip.wxss */
+
+.banner{
+  height: 400rpx;
+  background: lightblue;
+  margin:60rpx 20rpx;
+  border-radius: 30rpx;
+}
+.flexbox{
+  display: flex;
+  justify-content: space-around;
+  margin-top:200rpx;
+}
+.btn{
+  width:30%;
+  height: 100rpx;
+  line-height:100rpx;
+  text-align: center;
+  border-radius: 20rpx;
+  font-size: 32rpx;
+}
+.btn:active{
+  background: lightblue;
+}
+.visit{
+  background: lightyellow;
+  color: darkblue;
+}
+.admin{
+  background: #1296db;
+  color: lightyellow;
+}

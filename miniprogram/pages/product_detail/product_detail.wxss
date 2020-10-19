@@ -1,0 +1,142 @@
+/* miniprogram/pages/product_detail/product_detail.wxss */
+.imgbox,.img{
+  width: 100%;
+  height: 350rpx;
+}
+.text{
+  height: 90rpx;
+  line-height: 90rpx;
+  background: #1296db;
+  padding: 0 20rpx;
+}
+.h{
+  font-size: 30rpx;
+  color: #fff;
+}
+.c{
+  font-size: 24rpx;
+  color: #fff;
+}
+.box{
+  padding: 20rpx;
+  background: #fff;
+}
+.title{
+  font-size: 36rpx;
+  line-height: 50rpx;
+}
+.notice{
+  font-size: 24rpx;
+  color: #888;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.price{
+  font-size: 28rpx;
+}
+.pri{
+  font-size: 40rpx;
+  color: red;
+}
+.del{
+  text-decoration: line-through;
+}
+.send{
+  margin-top:20rpx;
+  padding:30rpx 20rpx;
+  font-size: 28rpx;
+  background: #fff;
+}
+.con{
+  color:#888;
+}
+.top{
+  margin-top:20rpx;
+}
+.tab{
+  border-radius: 20rpx;
+  border: 1px solid #f5f5f5;
+}
+.fir{
+  height: 90rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f5f5f5;
+}
+.left{
+  width: 25%;
+  font-size: 28rpx;
+  text-align: center;
+  color: #888;
+}
+.right{
+  width: 75%;
+  font-size: 30rpx;
+}
+.red{
+  color: red;
+}
+.small{
+  font-size: 20rpx;
+}
+.last{
+  border: none;
+}
+.page{
+  padding-bottom: 150rpx;
+}
+.bot{
+  height: 120rpx;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding:0 40rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px #f5f5f5 solid;
+}
+.btns{
+  width: 80%;
+  display: flex;
+}
+.join,.buy{
+  width: 50%;
+  text-align: center;
+  padding: 20rpx 0;
+}
+.join{
+  background: #f5f5f5;
+  color:#1296db;
+  border-radius: 20rpx 0 0 20rpx;
+}
+.buy{
+  background: #1296db;
+  color: #fff;
+  border-radius: 0 20rpx 20rpx 0;
+}
+.carbox{
+  width: 80rpx;
+  height: 80rpx;
+  text-align: center;
+  position: relative;
+}
+.num{
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  border-radius: 20rpx;
+  background: red;
+  color: #fff;
+  font-size: 24rpx;
+  position: absolute;
+  top:0;
+  right: -20rpx;
+}
+.icon{
+  line-height: 80rpx;
+  font-size: 50rpx;
+}

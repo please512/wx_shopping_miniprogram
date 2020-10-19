@@ -1,0 +1,34 @@
+/* components/car/car.wxss */
+.carbox{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+  background: #1296db;
+  z-index: 10000;
+}
+.posi{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.caricon{
+  width: 60%;
+  height: 60%;
+}
+.num{
+  font-size: 28rpx;
+  color: #fff;
+  position: absolute;
+  top:-15rpx;
+  right: -15rpx;
+  display: block;
+  width: 50rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  border-radius: 50%;
+  background: #1296db;
+  text-align: center;
+}

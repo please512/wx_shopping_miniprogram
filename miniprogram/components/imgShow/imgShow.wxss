@@ -1,0 +1,57 @@
+/* components/imgShow/imgShow.wxss */
+@import '../../utils/iconfont.wxss';
+.layerOver{
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, .3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgbox{
+  position: fixed;
+  top:0;
+  left:0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 600rpx;
+  height: 490rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+.head{
+  height: 100rpx;
+  background: #1296db;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40rpx;
+  color: #fff;
+  font-weight: 600;
+}
+.close{
+  width: 100rpx;
+  height: 100rpx;
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon{
+  font-size: 50rpx;
+}
+.imgcontent{
+  height: 400rpx;
+  border-radius: 0 0 20rpx 20rpx;
+}
+.img{
+  width: 100%;
+  height: 400rpx;
+}

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "imgShow": "/components/imgShow/imgShow",
+    "car": "/components/car/car"
+  }
+}

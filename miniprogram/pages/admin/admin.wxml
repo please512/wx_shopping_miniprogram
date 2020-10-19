@@ -1,0 +1,60 @@
+<!-- 
+
+货架展示
+<view wx:for="{{collectionList}}" wx:key="index">{{item}}</view>
+<input placeholder="货架名字" bindblur="getCollectionName"></input>
+<button bindtap="addCollection">添加货架</button>
+<input placeholder="商品名字" bindblur="getProductName"></input>
+<picker bindchange="getProductArea" value="{{collectionIndex}}" range="{{collectionList}}">
+  <view class="picker">
+    商品分区:{{collectionList[collectionIndex]}}
+  </view>
+</picker> -->
+<!-- <button bindtap="addProduct">添加商品</button> -->
+<view class="title">操作</view>
+<view class="content" bindtap="add_product">
+  <icon class="iconfont iconshangpin icon"></icon>
+  <text class="tip">商品添加</text>
+  <icon class="iconfont iconyou icon arrowright"></icon>
+</view>
+<!-- <view class="content" bindtap="edit_product">
+  <icon class="iconfont iconshangpin icon"></icon>
+  <text class="tip">商品更改</text>
+  <icon class="iconfont iconyou icon arrowright"></icon>
+</view> -->
+<view class="content last" bindtap="del_product">
+  <icon class="iconfont iconshangpin icon"></icon>
+  <text class="tip">商品删除</text>
+  <icon class="iconfont iconyou icon arrowright"></icon>
+</view>
+
+<view class="title">货架</view>
+<view class="content" bindtap="add_collection">
+  <icon class="iconfont iconshinshophuojia icon"></icon>
+  <text class="tip">货架添加</text>
+  <icon class="iconfont iconyou icon arrowright"></icon>
+</view>
+<view class="content last" bindtap="delete_collection">
+  <icon class="iconfont iconshinshophuojia icon"></icon>
+  <text class="tip">货架删除</text>
+  <icon class="iconfont iconyou icon arrowright"></icon>
+</view>
+
+<view class="title">用户</view>
+<view class="content" bindtap="user">
+  <icon class="iconfont iconiconset0203 icon"></icon>
+  <text class="tip">用户查询</text>
+  <icon class="iconfont iconyou icon arrowright"></icon>
+</view>
+<view class="content last" bindtap="feedbacklist">
+  <icon class="iconfont iconiconset0203 icon"></icon>
+  <text class="tip">意见反馈</text>
+  <icon class="iconfont iconyou icon arrowright"></icon>
+</view>
+
+<view class="title">管理员</view>
+<view class="content last" bindtap="admin">
+  <icon class="iconfont iconshezhi icon"></icon>
+  <text class="tip">管理员设置</text>
+  <icon class="iconfont iconyou icon arrowright"></icon>
+</view>

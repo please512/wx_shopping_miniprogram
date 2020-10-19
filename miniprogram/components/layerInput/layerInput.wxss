@@ -1,0 +1,84 @@
+.toast-box {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+
+.toastbg {
+  opacity: .4;
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.showToast {
+  position: absolute;
+  opacity: 1;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 50%;
+}
+
+.toast-title {
+  padding-left: 5%;
+  background-color: #1296db;
+  color: white;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  border-top-right-radius: 16rpx;
+  border-top-left-radius: 16rpx;
+}
+
+.toast-main {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  background-color: white;
+  text-align: center;
+}
+
+.toast-input {
+  margin-left: 10%;
+  margin-right: 10%;
+  border: 1px solid #ddd;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+.toast-button {
+  display: flex;
+}
+
+.button1 {
+  width: 50%;
+}
+
+.button2 {
+  width: 50%;
+}
+
+.button1 button {
+  width: 100%;
+  height: 50px;
+  line-height: 35px;
+  background-color: #eee;
+  color: #1296db;
+  border-radius: 0px;
+  border-bottom-left-radius: 16rpx;
+}
+
+.button2 button{
+  width: 100%;
+  height: 50px;
+  line-height: 35px;
+  background: #1296db;
+  color: #fff;
+  border-radius: 0px;
+  border-bottom-right-radius: 16rpx;
+}

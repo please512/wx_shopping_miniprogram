@@ -1,0 +1,10 @@
+<view class='page'>
+  <view style="padding-left:30rpx;height:100rpx;line-height:100rpx;font-weight:600;">请填写货架信息</view>
+  <view class="content">
+    <view class="tip">货架名称</view>
+    <view class="inpbox">
+      <input placeholder="请输入货架名称" value="{{collectionName}}" bindinput="collectionInp" class="inp"></input>
+    </view>
+  </view>
+  <button class="submit" bindtap="submit">提 交</button>
+</view>

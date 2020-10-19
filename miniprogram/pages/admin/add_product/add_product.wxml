@@ -1,0 +1,75 @@
+<view class='page'>
+  <view style="padding-left:30rpx;height:100rpx;line-height:100rpx;font-weight:600;">请填写商品信息</view>
+  <view class="content">
+    <view class="tip"><text class="required">* </text>商品名称</view>
+    <view class="inpbox">
+      <input placeholder="请输入商品名称" value="{{productName}}" bindinput="productName" class="inp"></input>
+    </view>
+  </view>
+  <view class="content">
+    <view class="tip"><text class="required">* </text>商品分区</view>
+    <view class="inpbox">
+      <picker class="inp" bindchange="getProductArea" value="{{collectionIndex}}" range="{{collectionList}}">{{collectionList[collectionIndex]}}</picker>
+    </view>
+  </view>
+  <view class="content">
+    <view class="tip"><text class="required">* </text>商品图片</view>
+    <view class="inp imgbox">
+      <view class="addedbox" wx:for="{{imgList}}" wx:key="index" bindtap="deleteimg" data-index="{{index}}">
+        <image src="{{item}}" class="img"></image>
+      </view>
+      <view class="addbox" bindtap="addimg" wx:if="{{imgList.length<3}}">
+        <icon class="iconfont icontianjia icon"></icon>
+      </view>
+    </view>
+  </view>
+  <view class="content">
+    <view class="tip">零售规格</view>
+    <view class="inpbox">
+      <input placeholder="请输入零售规格" value="{{l_guige}}" bindinput="l_guige" class="inp"></input>
+    </view>
+  </view>
+  <view class="content">
+    <view class="tip"><text class="required">* </text>零售单位</view>
+    <view class="inpbox">
+      <input placeholder="请输入零售单位" value="{{l_danwei}}" bindinput="l_danwei" class="inp"></input>
+    </view>
+  </view>
+  <view class="content">
+    <view class="tip">零售原价</view>
+    <view class="inpbox">
+      <input placeholder="请输入零售原价" type="number" value="{{l_region_price}}" bindinput="l_region_price" class="inp"></input>
+    </view>
+  </view>
+  <view class="content">
+    <view class="tip"><text class="required">* </text>零售价格</view>
+    <view class="inpbox">
+      <input placeholder="请输入零售价格" type="number" value="{{l_price}}" bindinput="l_price" class="inp"></input>
+    </view>
+  </view>
+  <view class="content">
+    <view class="tip">批发规格</view>
+    <view class="inpbox">
+      <input placeholder="请输入批发规格" type="number" value="{{p_guige}}" bindinput="p_guige" class="inp"></input>
+    </view>
+  </view>
+  <view class="content">
+    <view class="tip"><text class="required">* </text>批发单位</view>
+    <view class="inpbox">
+      <input placeholder="请输入批发单位" value="{{p_danwei}}" bindinput="p_danwei" class="inp"></input>
+    </view>
+  </view>
+  <view class="content">
+    <view class="tip">批发原价</view>
+    <view class="inpbox">
+      <input placeholder="请输入批发原价" type="number" value="{{p_region_price}}" bindinput="p_region_price" class="inp"></input>
+    </view>
+  </view>
+  <view class="content">
+    <view class="tip"><text class="required">* </text>批发价格</view>
+    <view class="inpbox">
+      <input placeholder="请输入批发价格" type="number" value="{{p_price}}" bindinput="p_price" class="inp"></input>
+    </view>
+  </view>
+  <button class="submit" bindtap="submit">提 交</button>
+</view>

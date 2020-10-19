@@ -1,0 +1,9 @@
+<view class="title">用户展示</view>
+<view bindtap="show" data-address="{{item.address}}" class="{{index==collectionList.length-1?'contentlast':'content'}}" wx:for="{{collectionList}}" wx:key="index">
+  <!-- <icon class="iconfont iconicon-test icon"></icon> -->
+  <view class="ava">
+    <image src="{{item.avatarUrl}}" class="img"></image>
+  </view>
+  <text class="tip">{{item.nickName}}</text>
+  <view class="del">{{item.tel?item.tel:'未注册'}}</view>
+</view>

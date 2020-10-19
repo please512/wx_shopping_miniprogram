@@ -1,0 +1,11 @@
+<view class="banner">
+  门头图片
+</view>
+<view class="flexbox">
+  <view class="btn visit" bindtap="nav" data-num="{{false}}">
+    我是顾客
+  </view>
+  <view class="btn admin" bindtap="nav" data-num="{{true}}">
+    我是管理员
+  </view>
+</view>

@@ -1,0 +1,75 @@
+<view class="page">
+  <swiper class="imgbox" autoplay="{{true}}" interval="2000" circular="{{true}}" duration="{{500}}">
+    <block wx:for="{{productImgs}}" wx:key="index">
+      <swiper-item>
+        <image src="{{item}}" class="img" bindtap="seeProduct" data-url="{{item}}"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="text">
+    <text class="h" wx:if="{{detail.l_region_price}}">特卖</text>
+    <text class="c"> <text wx:if="{{detail.l_region_price}}"> · </text>正品保障 · 送货上门 · 服务满分</text>
+  </view>
+  <view class="box">
+    <view class="title">
+      <text>{{detail.productName}}</text>
+    </view>
+    <view class="notice">
+      <text>海量好货 当日送达</text>
+    </view>
+    <view class="price">
+      <text><text class="pri">￥{{detail.l_price}}</text><text wx:if="{{detail.l_region_price}}">（<text class="pri del">￥{{detail.l_region_price}}</text>）</text>  {{detail.l_danwei}}</text>
+    </view>
+  </view>
+  <view class="send">
+    配送 <text class="con">16:00前下单，当日送达</text>
+  </view>
+  <view class="box top">
+    <view style="margin-bottom:20rpx;">商品详情</view>
+    <view class="tab">
+      <view class="fir">
+        <view class="left">名称</view>
+        <view class="right">{{detail.productName}}</view>
+      </view>
+      <view class="fir" wx:if="{{detail.l_region_price}}">
+        <view class="left">原价</view>
+        <view class="right"><text class="red">{{detail.l_region_price}}元</text><text wx:if="detail.l_danwei"> {{detail.l_danwei}}</text></view>
+      </view>
+      <view class="fir">
+        <view class="left">售价</view>
+        <view class="right"><text class="red">{{detail.l_price}}元</text><text wx:if="detail.l_danwei"> {{detail.l_danwei}}</text></view>
+      </view>
+      <view class="fir" wx:if="{{detail.l_guige}}">
+        <view class="left">规格</view>
+        <view class="right"><text>{{detail.l_guige}}</text><text wx:if="detail.l_danwei"> {{detail.l_danwei}}</text></view>
+      </view>
+      <view class="fir" wx:if="{{detail.p_region_price}}">
+        <view class="left">批发原价</view>
+        <view class="right"><text class="red">{{detail.p_region_price}}元</text><text wx:if="detail.p_danwei">  {{detail.p_danwei}}</text></view>
+      </view>
+      <view class="fir">
+        <view class="left">批发价</view>
+        <view class="right"><text class="red">{{detail.p_price}}元</text><text wx:if="detail.p_danwei">  {{detail.p_danwei}}</text></view>
+      </view>
+      <view class="fir" wx:if="{{detail.p_guige && detail.l_danwei && detail.p_danwei}}">
+        <view class="left">批发规格</view>
+        <view class="right"><text class="red">{{detail.p_guige}}{{detail.l_danwei}}</text><text wx:if="detail.p_danwei"> {{detail.p_danwei}}</text></view>
+      </view>
+      <view class="fir last">
+        <view class="left">分区</view>
+        <view class="right">{{detail.productArea}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="bot">
+  <view class="carbox" bindtap="car">
+    <view class="num" wx:if="{{num}}">{{num}}</view>
+    <icon class="iconfont icongouwuchezhengpin icon"></icon>
+  </view>
+  <view class="btns">
+    <view class="join" bindtap="join">加入购物车</view>
+    <view class="buy">立即购买</view>
+  </view>
+</view>
+<imgShow imgUrl="{{imgUrl}}" imgShow="{{imgShow}}" bindclose="close"/>

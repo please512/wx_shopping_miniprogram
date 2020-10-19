@@ -1,0 +1,36 @@
+<view class="banner">
+  <view class="imgbox">
+    <image class="img" src="{{isLogin?avatarUrl:'../../images/code-db-onQuery.png'}}"></image>
+  </view>
+  <view class="loginbox">
+    <button wx:if="{{!isLogin}}" style="background:#1296db;color:#fff;" class="nickname" open-type="getUserInfo" class="content last" bindgetuserinfo="authUser">欢迎光临</button>
+    <!-- <text wx:if="{{!isLogin}}" class="nickname">欢迎光临</text> -->
+    <text wx:else class="nickname">{{nickName}}</text>
+  </view>
+</view>
+<button style="width:100%;font-weight:100;border-bottom:1px #ccc solid;" open-type="getUserInfo" class="content last" bindgetuserinfo="authUser">
+  <icon class="iconfont icongerenzhongxin icon"></icon>
+  <text class="tip">个人中心</text>
+  <icon class="iconfont iconyou icon arrowright"></icon>
+</button>
+<view class="content" bindtap="send">
+  <icon class="iconfont iconpeisong icon"></icon>
+  <text class="tip">配送说明</text>
+  <icon class="iconfont iconyou icon arrowright"></icon>
+</view>
+<view class="content" bindtap="concact">
+  <icon class="iconfont iconweibiaoti- icon"></icon>
+  <text class="tip">联系掌柜</text>
+  <icon class="iconfont iconyou icon arrowright"></icon>
+</view>
+<view class="{{setShow?'content':'content last'}}" bindtap="feedback">
+  <icon class="iconfont iconfankui1 icon"></icon>
+  <text class="tip">意见与反馈</text>
+  <icon class="iconfont iconyou icon arrowright"></icon>
+</view>
+<view class="content last" bindtap="set" wx:if="{{setShow}}">
+  <icon class="iconfont iconshezhi icon"></icon>
+  <text class="tip">设置</text>
+  <icon class="iconfont iconyou icon arrowright"></icon>
+</view>
+<layerInput showConfirm="{{isShowConfirm}}" bindpassword="inputpassword" bindcancel="cancel" bindconfirm="confirm"></layerInput>

@@ -1,0 +1,68 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/admin/delete_product/delete_product",
+    "pages/car/car",
+    "pages/product_detail/product_detail",
+    "pages/admin/add_product/add_product",
+    "pages/admin/feedbacklist/feedbacklist",
+    "pages/my/feedback/feedback",
+    "pages/admin/users_get_collection/users_get_collection",
+    "pages/admin/delete_collection/delete_collection",
+    "pages/my/myInfo/myInfo",
+    "pages/admin/admin",
+    "pages/login_tip/login_tip",
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid",
+    "pages/im/im",
+    "pages/im/room/room",
+    "pages/is_admin/is_admin",
+    "pages/category/category",
+    "pages/my/my",
+    "pages/admin/add_collection/add_collection",
+    "pages/admin/admin_manage/admin_manage"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "海浩针织",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "tabBar": {
+    "color": "#cccccc",
+    "selectedColor": "#1296db",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "images/home/home1.png",
+        "iconPath": "images/home/home0.png",
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/home/cate1.png",
+        "iconPath": "images/home/cate0.png",
+        "pagePath": "pages/category/category",
+        "text": "分类"
+      },
+      {
+        "selectedIconPath": "images/home/my1.png",
+        "iconPath": "images/home/my0.png",
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  }
+}

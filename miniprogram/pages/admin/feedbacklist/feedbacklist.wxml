@@ -1,0 +1,6 @@
+<view class="title">意见反馈展示</view>
+<view bindtap="show" data-item="{{item}}" class="{{index==adviceList.length-1?'contentlast':'content'}}" wx:for="{{adviceList}}" wx:key="index">
+  <icon class="iconfont iconiconnotes icon"></icon>
+  <text class="tip">{{item.nickName}}</text>
+  <view class="del">{{item.advice}}</view>
+</view>

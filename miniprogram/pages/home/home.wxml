@@ -1,0 +1,37 @@
+<!--miniprogram/pages/home/home.wxml-->
+<view class="page">
+  <view class="swiper">
+    <image src="../../images/home/banner.jpg" class="banner"></image>
+  </view>
+  <view class="search">
+    <input placeholder="搜索" class="searchInp" bindinput="changeInput"></input>
+    <view class="searchbtn" bindtap="search">
+      <icon class="iconfont iconicon-test searchicon"></icon>
+    </view>
+    <view class="searchbtn refresh" bindtap="refresh">
+      <icon class="iconfont iconshuaxin refreshicon"></icon>
+    </view>
+  </view>
+  <view class="con" wx:if="{{!search}}">
+    <view class="box" wx:for="{{productList}}" wx:key="index" bindtap="detail" data-item="{{item}}">
+      <view class="imgbox">
+        <image class="img" src="{{item.tempFileURL1}}"></image>
+      </view>
+      <view class="pri name">{{item.productName}}</view>
+      <view class="pri">￥ {{item.l_price}}</view>
+    </view>
+  </view>
+  <view class="con" wx:if="{{search}}">
+    <view class="box" wx:if="{{searchList.length}}" wx:for="{{searchList}}" wx:key="index" bindtap="detail" data-item="{{item}}">
+      <view class="imgbox">
+        <image class="img" src="{{item.tempFileURL1}}"></image>
+      </view>
+      <view class="pri name">{{item.productName}}</view>
+      <view class="pri">￥ {{item.l_price}}</view>
+    </view>
+    <view class="empty" wx:if="{{!searchList.length}}">
+      <image src="../../images/noproduct.png" class="emptyimg"></image>
+    </view>
+  </view>
+</view>
+<car/>

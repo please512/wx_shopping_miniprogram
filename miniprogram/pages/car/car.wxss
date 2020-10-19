@@ -1,0 +1,203 @@
+page{
+  background: #fff;
+}
+.imgempty{
+  width: 100%;
+  height: 400rpx;
+}
+.empty{
+  font-size: 24rpx;
+  text-align: center;
+  margin:20rpx 0;
+}
+.tip{
+  height: 80rpx;
+  width: 150rpx;
+  text-align: center;
+  line-height: 80rpx;
+  background: #1296db;
+  color: #fff;
+  border-radius: 20rpx;
+  margin: 0 auto;
+  margin-top:30rpx;
+}
+.box{
+  padding:20rpx;
+  padding-bottom: 150rpx;
+}
+.con{
+  padding: 20rpx;
+  background: #f5f5f5;
+  border-radius: 20rpx;
+}
+.title{
+  display: flex;
+  position: relative;
+  border-bottom: 1px #888 solid;
+}
+.nobot{
+  border:none;
+}
+.left{
+  width: 80rpx;
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lefbox{
+  height: auto;
+}
+radio .wx-radio-input{
+  border-radius: 50%;/* 圆角 */
+  width: 40rpx; /* 背景的宽 */
+  height: 40rpx; /* 背景的高 */
+}
+/* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked{
+  border: 1rpx solid #1296db;
+  background: #1296db;
+}
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked::before{
+  border-radius: 50%;/* 圆角 */
+  width: 40rpx;/* 选中后对勾大小，不要超过背景的尺寸 */
+  height: 40rpx;/* 选中后对勾大小，不要超过背景的尺寸 */
+  line-height: 40rpx;
+  text-align: center;
+  font-size:30rpx; /* 对勾大小 30rpx */
+  color:#fff; /* 对勾颜色 白色 */
+  background: transparent;
+  transform:translate(-50%, -50%) scale(1);
+  -webkit-transform:translate(-50%, -50%) scale(1);
+}
+.right{
+  min-height: 80rpx;
+  line-height: 80rpx;
+  color: #1296db;
+}
+.rightbox{
+  display: flex;
+  flex: 1;
+  padding: 20rpx;
+}
+.del{
+  width: 100rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  position: absolute;
+  right: 20rpx;
+  top:0;
+  color: red;
+}
+.img{
+  width: 160rpx;
+  height: 160rpx;
+}
+.lastbox{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 1;
+  height: 100%;
+  padding-left: 20rpx;
+  position: relative;
+}
+.name{
+  font-size: 28rpx;
+  line-height: 36rpx;
+}
+.price{
+  font-size: 36rpx;
+  line-height: 36rpx;
+  color: red;
+}
+.delT{
+  text-decoration: line-through;
+  font-size: 24rpx;
+  color: #888;
+}
+.jiajian{
+  width: 150rpx;
+  height: 60rpx;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.jian,.jia{
+  width: 40rpx;
+  height: 40rpx;
+  /* line-height: 40rpx; */
+  border-radius: 50%;
+  border:1px #888 solid;
+  /* text-align: center; */
+  color: #888;
+  font-size: 40rpx;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.num{
+  color: red;
+}
+.bott{
+  height: 120rpx;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 20rpx;
+}
+.bot{
+  height: 120rpx;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding:0 40rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px #f5f5f5 solid;
+}
+.btns{
+  width: 70%;
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+}
+.join,.buy{
+  width: 40%;
+  text-align: center;
+  padding: 20rpx 0;
+}
+.join{
+  width: 50%; 
+  font-size: 28rpx;
+  line-height: 60rpx;
+}
+.buy{
+  height: 40rpx;
+  line-height: 40rpx;
+  background: #1296db;
+  color: #fff;
+  border-radius: 40rpx;
+}
+.carbox{
+  width: 180rpx;
+  height: 80rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.all{
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+}

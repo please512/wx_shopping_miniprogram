@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "layerInput": "/components/layerInput/layerInput"
+  }
+}

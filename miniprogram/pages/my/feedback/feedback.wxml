@@ -1,0 +1,10 @@
+<view class='page'>
+  <view style="padding-left:30rpx;height:100rpx;line-height:100rpx;font-weight:600;">请填写意见与反馈</view>
+  <view class="content">
+    <view class="tip">意见反馈</view>
+    <view class="inpbox">
+      <textarea value="{{advice}}" bindinput="adviceInp" class="inp"></textarea>
+    </view>
+  </view>
+  <button class="submit" bindtap="submit">提 交</button>
+</view>

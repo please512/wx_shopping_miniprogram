@@ -1,0 +1,6 @@
+<view class='carbox' bindtouchend="end" style="position:fixed;left:{{style.x}}px;top:{{style.y}}px;" bindtap="gotocar" bindtouchmove="move" bindtouchstart="start">
+  <view class="posi">
+    <image src="/images/carshow.png" class="caricon"></image>
+    <text class="num">{{num}}</text>
+  </view>
+</view>
